@@ -1,22 +1,23 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18-bullseye",
-    "features": {
-      "ghcr.io/devcontainers-contrib/features/jshint:2": {}
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18-bullseye",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/jshint:2": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
     },
-    "customizations": {
-      "vscode": {
-        "extensions": [
-          "dbaeumer.vscode-eslint",
-          "esbenp.prettier-vscode"
-        ]
-      },
-      "codespaces": {
-        "openFiles": [
-          "src/App.tsx"
-        ]
-      }
-    },
-    "otherPortsAttributes": {
-        "onAutoForward": "openPreview"
+    "codespaces": {
+      "openFiles": [
+        "src/App.tsx"
+      ]
     }
-  }
+  },
+  "otherPortsAttributes": {
+      "onAutoForward": "openPreview"
+  },
+  "updateContentCommand": "npm install"
+}
