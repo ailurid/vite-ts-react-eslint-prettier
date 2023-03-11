@@ -5,19 +5,14 @@
   },
   "customizations": {
     "vscode": {
-      "extensions": [
-        "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode"
-      ]
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode", "aaron-bond.better-comments"]
     },
     "codespaces": {
-      "openFiles": [
-        "src/App.tsx"
-      ]
+      "openFiles": ["src/App.tsx"]
     }
   },
   "otherPortsAttributes": {
-      "onAutoForward": "openPreview"
+    "onAutoForward": "openPreview"
   },
   "updateContentCommand": "npm install"
 }
