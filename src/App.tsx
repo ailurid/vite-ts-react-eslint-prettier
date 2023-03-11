@@ -9,7 +9,7 @@ import "./App.css";
 
 export const App: FunctionComponent = () => {
   const [count, setCount] = useState(0);
-
+  // const [badCount, setBadCount] = useState<number>("1");
   // const badMemo = useMemo(() => count, []);
 
   return (
