@@ -9,8 +9,10 @@ export default defineConfig({
     checker({
       typescript: true,
       eslint: {
-        lintCommand: "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore"
-      }
-    })
-  ]
+        useFlatConfig: true,
+        lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx}"',
+        // lintCommand: "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --ignore-path .gitignore",
+      },
+    }),
+  ],
 });
