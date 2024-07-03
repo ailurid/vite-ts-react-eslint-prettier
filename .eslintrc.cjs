@@ -1,21 +1,21 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
   },
   extends: [
     // "eslint:recommended",
     "airbnb",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
   ],
   overrides: [],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     // project: ["./tsconfig.json"],
     ecmaVersion: "latest",
-    sourceType: "module"
+    sourceType: "module",
   },
   plugins: ["react", "@typescript-eslint"],
   rules: {
@@ -53,16 +53,16 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "react/require-default-props": "off",
     indent: "off",
-    quotes: "off"
+    quotes: "off",
   },
   settings: {
     "import/extensions": [".ts", ".tsx"],
     "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
+      "@typescript-eslint/parser": [".ts", ".tsx"],
     },
     "import/resolver": {
       // typescript: {},
-      node: { extensions: [".js", ".jsx", ".ts", ".tsx"] }
-    }
-  }
+      node: { extensions: [".js", ".jsx", ".ts", ".tsx"] },
+    },
+  },
 };
